@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #ffe9f1;
+}
+
+body, p, h1, h2, h3, h4, h5, h6, label, input, textarea, select {
+    writing-mode: horizontal-tb; /* 横向从上到下书写 */
+    text-orientation: mixed; /* 默认混合方向 */
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.rounded-section {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    margin-top: 500px; 
+    height: 700px; 
+    position: relative;  /*为绝对定位的子元素提供定位上下文 */
+}
+
+/* .rounded-section h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+} */
+
+.header-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 33.33%; /* 占据页面高度的三分之一 */
+    background-image: url('../img/论坛背景图.jpg'); 
+    display: flex;
+    justify-content: center;
+    align-items: center; /* 文字和图片垂直居中 */
+    text-align: center; /* 文字水平居中 */
+}
+
+.header-section img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px; /* 图片下方预留一点空间 */
+}
+
+.message-board-content {
+    position: absolute;
+    top: 0; /* 文本域位于留言板顶部 */
+    left: 0;
+    right: 0;
+    height: calc(2/3 * 100%); /* 占据上三分之二高度 */
+    padding-bottom: 20px; /* 如果需要底部留白 */
+    overflow-y: auto; /* 超出内容可滚动 */
+}
+
+.button-container {
+    display: flex; /* 使用Flexbox布局 */
+    justify-content: space-between; /* 在按钮之间添加间距 */
+    margin-top: 490px;
+}
+
+.button-container button {
+
+    width: 50%; /* 让按钮平分剩余的空间 */
+    height: 40px; /* 根据需要调整按钮高度 */
+    cursor: pointer; /* 改变鼠标光标形状，表示可点击 */
+    border: none; /* 移除默认边框 */
+    outline: none; /* 移除默认轮廓线 */
+    border-radius: 4px; /* 添加圆角 */
+    background-color: #e9e9e9; /* 设置背景色 */
+    color: black; /* 设置字体颜色 */
+    font-size: 16px; /* 设置字体大小 */
+    transition: all 0.3s ease-in-out; /* 添加过渡效果 */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+textarea {
+    resize: none;
+}
+
+
+.hot-news {
+    font-size: 40px;
+
+
+}
+
+.set-link-format{
+    color: #124ba7; /* 例如，设置为橙色 */
+  text-decoration: none;
+
+}
+
+.media-module {
+    font-size: 40px;
+
+}
+
+h1 {
+    font-size: 250px;
+    text-align: center;
+    color:aqua;
+}
+
+h2{
+
+    text-align: center;
+}
