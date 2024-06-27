@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1d1f21;
+    background-image: url('../img/注册背景图.jpg');
+    background-repeat: no-repeat;
+    /* 防止图片平铺 */
+    background-position: center;
+    /* 图片居中 */
+    background-size: cover;
+    /* 图片拉伸以填充整个容器 */
+    background-attachment: fixed;
+    /* 图片固定，不随滚动条滚动（可选） */
+
+}
+
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px;
+    width: 600px;
+    background-color: rgba(0, 255, 255, 0.6);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #2b8cbb;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #267abc;
+}
+
+input[type="submit"]:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+#send-captcha {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+
+}
+
+#send-captcha:hover {
+    color: #2b8cbb;
+}
+
+.custom-button {
+    height: 40px;
+    /* 修改按钮高度 */
+    line-height: 40px;
+    /* 确保按钮内部文字垂直居中 */
+    font-size: 18px;
+    /* 改变按钮文字大小 */
+    padding: 0 20px;
+    /* 增加按钮内容区域的填充 */
+}

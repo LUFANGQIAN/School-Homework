@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>注册 动漫小站 账号</title>
+    <link rel="stylesheet" href="./CSS/register.css">
+</head>
+
+<body>
+    <form action="/register" method="post">
+        <label for="email">邮箱:</label><br>
+        <input type="email" id="email" name="email" placeholder=""><br>
+        <label for="captcha">验证码:</label>
+        <input type="text">
+        <button type="button" id="send-captcha" class="custom-button">发送</button><br>
+        <label for="password">密码:</label>
+        <input type="password" id="password" name="password" pattern=".{8,16}" title="8-16位大小写字母数字下划线"><br>
+        <label for="confirm-password">确认密码:</label>
+        <input type="password" id="confirm-password" name="confirm-password" pattern=".{8,16}"
+            title="8-14位大小写字母数字下划线"><br>
+        <label for="invite-code">邀请码(选填):</label>
+        <input type="text" id="invite-code" name="invite-code"><br>
+        <label><input type="checkbox" name="agreement"> 我同意本站的《服务范围》/《隐私政策》/《服务条款》</label><br>
+        <br>
+        <button type="button" class="custom-button">注册</button>
+    </form>
+</body>
+
+</html>
